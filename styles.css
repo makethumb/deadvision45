@@ -1,0 +1,179 @@
+```css
+/* Basic Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light Neutral background */
+    color: #333; /* Dark Neutral text */
+}
+
+header {
+    background-color: #333; /* Dark Neutral background for header */
+    color: #fff; /* Light Neutral text */
+    padding: 1rem 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+/* Section Styles */
+section {
+    padding: 40px 0;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333; /* Dark Neutral for section titles */
+}
+
+
+/* About Section */
+.about-content {
+    text-align: center;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-links a {
+    margin: 0 10px;
+    font-size: 1.2rem;
+    color: #333; /* Dark Neutral */
+}
+
+
+/* Education Section */
+.education-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.education-item {
+    flex-basis: 45%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+
+/* Projects Section */
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project {
+    flex-basis: 45%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+/* Achievements Section */
+.achievements-list {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.skill-group ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+/* Publications Section */
+.publications-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.publication {
+    flex-basis: 45%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Dark Neutral for footer */
+    color: #fff; /* Light Neutral text */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/*Responsive*/
+@media (max-width: 768px){
+  .education-item, .project, .publication{
+    flex-basis: 100%;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr; /* One column for smaller screens */
+  }
+}
+
+/*aos animation*/
+[data-aos] {
+  opacity: 0; /* Initially hide elements */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition on appearance */
+}
+
+[data-aos].aos-animate {
+  opacity: 1; /* Show elements when animation is active */
+}
+```
+
+```
